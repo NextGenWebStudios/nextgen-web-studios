@@ -18,18 +18,16 @@
 <div class="logo">NextGen Web Studios</div>
 
 <nav>
-
-<a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Portfolio</a>
-<a href="#">Contact</a>
-
+  <a href="#hero">Home</a>
+  <a href="#services">Services</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 </header>
 
 
-<section class="hero">
+<section class="hero" id="hero">
 
 <h1>Websites That Grow Your Business</h1>
 
@@ -43,8 +41,8 @@ that help businesses look professional and attract more customers.
 </section>
 
 
-<section class="section">
-
+<section class="section" id="services">
+  
 <h2>Our Services</h2>
 
 <div class="grid">
@@ -69,8 +67,8 @@ that help businesses look professional and attract more customers.
 </section>
 
 
-<section class="section">
-
+<section class="section" id="portfolio">
+  
 <h2>Portfolio</h2>
 
 <div class="grid">
@@ -94,6 +92,16 @@ that help businesses look professional and attract more customers.
 
 </section>
 
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+
+  <form action="https://formspree.io/f/mbdzjzlw" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required style="padding:10px;width:90%;margin:10px 0;">
+    <input type="email" name="email" placeholder="Your Email" required style="padding:10px;width:90%;margin:10px 0;">
+    <textarea name="message" placeholder="Your Message" required style="padding:10px;width:90%;margin:10px 0;"></textarea>
+    <button type="submit" class="button">Send Message</button>
+  </form>
+</section>
 
 <footer>
 
