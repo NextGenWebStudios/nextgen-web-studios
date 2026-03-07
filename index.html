@@ -16,13 +16,14 @@
     <a href="#hero">Home</a>
     <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
+    <a href="#pricing">Pricing</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <!-- Hero Section -->
 <section id="hero">
-  <div class="hero-container">
+  <div class="hero-container reveal">
     <h1 class="hero-title">Websites That Grow Your Business</h1>
     <p class="hero-subtitle">
       NextGen Web Studios creates modern, high-performance websites
@@ -35,8 +36,8 @@
 </section>
 
 <!-- Services Section -->
-<section class="section reveal" id="services">
-  <h2>Our Services</h2>
+<section class="section" id="services">
+  <h2 class="reveal">Our Services</h2>
   <div class="grid">
     <div class="card reveal">
       <h3>Business Websites</h3>
@@ -54,32 +55,57 @@
 </section>
 
 <!-- Portfolio Section -->
-<section class="section reveal" id="portfolio">
-  <h2>Portfolio</h2>
+<section class="section" id="portfolio">
+  <h2 class="reveal">Portfolio</h2>
   <div class="grid">
     <div class="card reveal">
+      <img src="https://via.placeholder.com/400x250.png?text=Restaurant+Website" alt="Restaurant Website">
       <h3>Restaurant Website</h3>
       <p>Elegant website for restaurants with menu and contact features.</p>
     </div>
     <div class="card reveal">
+      <img src="https://via.placeholder.com/400x250.png?text=Gym+Website" alt="Gym Website">
       <h3>Gym Website</h3>
       <p>High-energy website for fitness brands and gyms.</p>
     </div>
     <div class="card reveal">
+      <img src="https://via.placeholder.com/400x250.png?text=Coaching+Website" alt="Coaching Website">
       <h3>Coaching Website</h3>
       <p>Professional site for coaching institutes and educators.</p>
     </div>
   </div>
 </section>
 
+<!-- Pricing Section -->
+<section class="section" id="pricing">
+  <h2 class="reveal">Pricing</h2>
+  <div class="grid">
+    <div class="card reveal">
+      <h3>Basic</h3>
+      <p>3–4 pages, responsive, contact form</p>
+      <p class="price">₹5k–₹10k</p>
+    </div>
+    <div class="card reveal">
+      <h3>Medium</h3>
+      <p>5–6 pages, animations, portfolio</p>
+      <p class="price">₹20k–₹35k</p>
+    </div>
+    <div class="card reveal">
+      <h3>Premium</h3>
+      <p>Full agency-level, smooth animations, multiple pages</p>
+      <p class="price">₹50k+</p>
+    </div>
+  </div>
+</section>
+
 <!-- Contact Section -->
-<section class="section reveal" id="contact">
-  <h2>Contact Us</h2>
-  <form action="https://formspree.io/f/mbdzjzlw" method="POST">
+<section class="section" id="contact">
+  <h2 class="reveal">Contact Us</h2>
+  <form action="https://formspree.io/f/mbdzjzlw" method="POST" class="reveal">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit" class="hero-btn">Send Message</button>
+    <button type="submit" class="button">Send Message</button>
   </form>
 </section>
 
@@ -87,20 +113,6 @@
   <p>© 2026 NextGen Web Studios</p>
 </footer>
 
-<!-- Scroll Reveal Script -->
-<script>
-const reveals = document.querySelectorAll('.reveal');
-window.addEventListener('scroll', () => {
-  const windowHeight = window.innerHeight;
-  reveals.forEach(el => {
-    const elementTop = el.getBoundingClientRect().top;
-    const revealPoint = 150;
-    if(elementTop < windowHeight - revealPoint){
-      el.classList.add('active');
-    }
-  });
-});
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
