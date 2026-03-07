@@ -62,10 +62,17 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f0f0f;
+  background: linear-gradient(-45deg, #0f0f0f, #1c1c2b, #2a2a3b, #0f0f0f);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   color: white;
 }
 
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 header {
   display: flex;
   justify-content: space-between;
