@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NextGen Web Studios</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
@@ -16,92 +14,92 @@
     <a href="#hero">Home</a>
     <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
-    <a href="#pricing">Pricing</a>
+    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <!-- Hero Section -->
 <section id="hero">
-  <div class="hero-container reveal">
+  <div class="hero-container">
     <h1 class="hero-title">Websites That Grow Your Business</h1>
     <p class="hero-subtitle">
       NextGen Web Studios creates modern, high-performance websites
       that help businesses look professional and attract more customers.
     </p>
-    <button class="hero-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+    <button class="hero-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
       Start Your Project
     </button>
   </div>
 </section>
 
-<!-- Services Section -->
+<!-- Services -->
 <section class="section reveal" id="services">
-  <h2 class="reveal">Our Services</h2>
+  <h2>Our Services</h2>
   <div class="grid">
-    <div class="card reveal">
+    <div class="card">
       <h3>Business Websites</h3>
       <p>Modern websites designed for small and growing businesses.</p>
     </div>
-    <div class="card reveal">
+    <div class="card">
       <h3>Landing Pages</h3>
       <p>High-conversion landing pages for ads and marketing campaigns.</p>
     </div>
-    <div class="card reveal">
+    <div class="card">
       <h3>Website Redesign</h3>
       <p>Transform outdated websites into modern professional platforms.</p>
     </div>
   </div>
 </section>
 
-<!-- Portfolio Section -->
+<!-- Portfolio -->
 <section class="section reveal" id="portfolio">
-  <h2 class="reveal">Portfolio</h2>
+  <h2>Portfolio</h2>
   <div class="grid">
-    <div class="card reveal">
+    <div class="card">
       <img src="https://via.placeholder.com/400x250.png?text=Restaurant+Website" alt="Restaurant Website">
       <h3>Restaurant Website</h3>
-      <p>Elegant website for restaurants with menu and contact features.</p>
+      <p>Problem: Outdated website. Solution: Modern menu + reservation system. Result: Increased bookings by 30%.</p>
+      <p class="price">Starting at ₹15,000</p>
     </div>
-    <div class="card reveal">
+    <div class="card">
       <img src="https://via.placeholder.com/400x250.png?text=Gym+Website" alt="Gym Website">
       <h3>Gym Website</h3>
-      <p>High-energy website for fitness brands and gyms.</p>
+      <p>Problem: No online presence. Solution: Dynamic class schedules + membership system. Result: New clients up 25%.</p>
+      <p class="price">Starting at ₹20,000</p>
     </div>
-    <div class="card reveal">
+    <div class="card">
       <img src="https://via.placeholder.com/400x250.png?text=Coaching+Website" alt="Coaching Website">
       <h3>Coaching Website</h3>
-      <p>Professional site for coaching institutes and educators.</p>
+      <p>Problem: Unorganized info. Solution: Structured courses + online signup. Result: Leads doubled.</p>
+      <p class="price">Starting at ₹25,000</p>
     </div>
   </div>
 </section>
 
-<!-- Pricing Section -->
-<section class="section" id="pricing">
-  <h2 class="reveal">Pricing</h2>
+<!-- Testimonials -->
+<section class="section reveal" id="testimonials">
+  <h2>Client Testimonials</h2>
   <div class="grid">
-    <div class="card reveal">
-      <h3>Basic</h3>
-      <p>3–4 pages, responsive, contact form</p>
-      <p class="price">₹5k–₹10k</p>
+    <div class="card">
+      <p>"NextGen Web Studios transformed our website! Professional and fast delivery."</p>
+      <h4>- Restaurant Owner</h4>
     </div>
-    <div class="card reveal">
-      <h3>Medium</h3>
-      <p>5–6 pages, animations, portfolio</p>
-      <p class="price">₹20k–₹35k</p>
+    <div class="card">
+      <p>"Our gym website now attracts more clients than ever. Highly recommend!"</p>
+      <h4>- Gym Owner</h4>
     </div>
-    <div class="card reveal">
-      <h3>Premium</h3>
-      <p>Full agency-level, smooth animations, multiple pages</p>
-      <p class="price">₹50k+</p>
+    <div class="card">
+      <p>"Amazing redesign and functionality. Our coaching business grew significantly."</p>
+      <h4>- Coach</h4>
     </div>
   </div>
 </section>
 
-<!-- Contact Section -->
+<!-- Contact -->
 <section class="section reveal" id="contact">
-<h2 class="reveal">Contact Us</h2>
-  <form action="https://formspree.io/f/mbdzjzlw" method="POST" class="reveal">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/mbdzjzlw" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" required></textarea>
