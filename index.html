@@ -2,115 +2,105 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>NextGen Web Studios</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
 <header>
-
-<div class="logo">NextGen Web Studios</div>
-
-<nav>
-  <a href="#hero">Home</a>
-  <a href="#services">Services</a>
-  <a href="#portfolio">Portfolio</a>
-  <a href="#contact">Contact</a>
-</nav>
-
+  <div class="logo">NextGen Web Studios</div>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-
-<section class="hero" id="hero">
-
-<h1>Websites That Grow Your Business</h1>
-
-<p>
-NextGen Web Studios creates modern, high-performance websites
-that help businesses look professional and attract more customers.
-</p>
-
-<button class="button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
-  Start Your Project
-</button>
-  
+<!-- Hero Section -->
+<section id="hero">
+  <div class="hero-container">
+    <h1 class="hero-title">Websites That Grow Your Business</h1>
+    <p class="hero-subtitle">
+      NextGen Web Studios creates modern, high-performance websites
+      that help businesses look professional and attract more customers.
+    </p>
+    <button class="hero-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+      Start Your Project
+    </button>
+  </div>
 </section>
 
-
-<section class="section" id="services">
-  
-<h2>Our Services</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Business Websites</h3>
-<p>Modern websites designed for small and growing businesses.</p>
-</div>
-
-<div class="card">
-<h3>Landing Pages</h3>
-<p>High-conversion landing pages for ads and marketing campaigns.</p>
-</div>
-
-<div class="card">
-<h3>Website Redesign</h3>
-<p>Transform outdated websites into modern professional platforms.</p>
-</div>
-
-</div>
-
+<!-- Services Section -->
+<section class="section reveal" id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card reveal">
+      <h3>Business Websites</h3>
+      <p>Modern websites designed for small and growing businesses.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Landing Pages</h3>
+      <p>High-conversion landing pages for ads and marketing campaigns.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Website Redesign</h3>
+      <p>Transform outdated websites into modern professional platforms.</p>
+    </div>
+  </div>
 </section>
 
-
-<section class="section" id="portfolio">
-  
-<h2>Portfolio</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Restaurant Website</h3>
-<p>Elegant website for restaurants with menu and contact features.</p>
-</div>
-
-<div class="card">
-<h3>Gym Website</h3>
-<p>High-energy website for fitness brands and gyms.</p>
-</div>
-
-<div class="card">
-<h3>Coaching Website</h3>
-<p>Professional site for coaching institutes and educators.</p>
-</div>
-
-</div>
-
+<!-- Portfolio Section -->
+<section class="section reveal" id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="grid">
+    <div class="card reveal">
+      <h3>Restaurant Website</h3>
+      <p>Elegant website for restaurants with menu and contact features.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Gym Website</h3>
+      <p>High-energy website for fitness brands and gyms.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Coaching Website</h3>
+      <p>Professional site for coaching institutes and educators.</p>
+    </div>
+  </div>
 </section>
 
-<section class="section" id="contact">
+<!-- Contact Section -->
+<section class="section reveal" id="contact">
   <h2>Contact Us</h2>
-
   <form action="https://formspree.io/f/mbdzjzlw" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required style="padding:10px;width:90%;margin:10px 0;">
-    <input type="email" name="email" placeholder="Your Email" required style="padding:10px;width:90%;margin:10px 0;">
-    <textarea name="message" placeholder="Your Message" required style="padding:10px;width:90%;margin:10px 0;"></textarea>
-    <button type="submit" class="button">Send Message</button>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="hero-btn">Send Message</button>
   </form>
 </section>
 
 <footer>
-
-<p>© 2026 NextGen Web Studios</p>
-
+  <p>© 2026 NextGen Web Studios</p>
 </footer>
 
-</body>
+<!-- Scroll Reveal Script -->
+<script>
+const reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', () => {
+  const windowHeight = window.innerHeight;
+  reveals.forEach(el => {
+    const elementTop = el.getBoundingClientRect().top;
+    const revealPoint = 150;
+    if(elementTop < windowHeight - revealPoint){
+      el.classList.add('active');
+    }
+  });
+});
+</script>
 
+</body>
 </html>
