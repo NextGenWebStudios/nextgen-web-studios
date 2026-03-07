@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NextGen Web Studios</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
@@ -14,12 +16,10 @@
     <a href="#hero">Home</a>
     <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
-    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<!-- Hero Section -->
 <section id="hero">
   <div class="hero-container">
     <h1 class="hero-title">Websites That Grow Your Business</h1>
@@ -27,14 +27,13 @@
       NextGen Web Studios creates modern, high-performance websites
       that help businesses look professional and attract more customers.
     </p>
-    <button class="hero-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+    <button class="hero-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
       Start Your Project
     </button>
   </div>
 </section>
 
-<!-- Services -->
-<section class="section reveal" id="services">
+<section class="section" id="services">
   <h2>Our Services</h2>
   <div class="grid">
     <div class="card">
@@ -52,52 +51,25 @@
   </div>
 </section>
 
-<!-- Portfolio -->
-<section class="section reveal" id="portfolio">
+<section class="section" id="portfolio">
   <h2>Portfolio</h2>
   <div class="grid">
     <div class="card">
-      <img src="https://via.placeholder.com/400x250.png?text=Restaurant+Website" alt="Restaurant Website">
       <h3>Restaurant Website</h3>
-      <p>Problem: Outdated website. Solution: Modern menu + reservation system. Result: Increased bookings by 30%.</p>
-      <p class="price">Starting at ₹15,000</p>
+      <p>Elegant website for restaurants with menu and contact features.</p>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/400x250.png?text=Gym+Website" alt="Gym Website">
       <h3>Gym Website</h3>
-      <p>Problem: No online presence. Solution: Dynamic class schedules + membership system. Result: New clients up 25%.</p>
-      <p class="price">Starting at ₹20,000</p>
+      <p>High-energy website for fitness brands and gyms.</p>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/400x250.png?text=Coaching+Website" alt="Coaching Website">
       <h3>Coaching Website</h3>
-      <p>Problem: Unorganized info. Solution: Structured courses + online signup. Result: Leads doubled.</p>
-      <p class="price">Starting at ₹25,000</p>
+      <p>Professional site for coaching institutes and educators.</p>
     </div>
   </div>
 </section>
 
-<!-- Testimonials -->
-<section class="section reveal" id="testimonials">
-  <h2>Client Testimonials</h2>
-  <div class="grid">
-    <div class="card">
-      <p>"NextGen Web Studios transformed our website! Professional and fast delivery."</p>
-      <h4>- Restaurant Owner</h4>
-    </div>
-    <div class="card">
-      <p>"Our gym website now attracts more clients than ever. Highly recommend!"</p>
-      <h4>- Gym Owner</h4>
-    </div>
-    <div class="card">
-      <p>"Amazing redesign and functionality. Our coaching business grew significantly."</p>
-      <h4>- Coach</h4>
-    </div>
-  </div>
-</section>
-
-<!-- Contact -->
-<section class="section reveal" id="contact">
+<section class="section" id="contact">
   <h2>Contact Us</h2>
   <form action="https://formspree.io/f/mbdzjzlw" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
@@ -111,6 +83,19 @@
   <p>© 2026 NextGen Web Studios</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+  // Scroll Reveal for all sections
+  const revealElements = document.querySelectorAll('.section, .hero-container');
+  window.addEventListener('scroll', () => {
+    const triggerBottom = window.innerHeight * 0.85;
+    revealElements.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if(top < triggerBottom) {
+        el.classList.add('active');
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
