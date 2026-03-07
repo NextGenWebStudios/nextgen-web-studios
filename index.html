@@ -5,21 +5,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NextGen Web Studios</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<header>
+<header id="header">
   <div class="logo">NextGen Web Studios</div>
   <nav>
     <a href="#hero">Home</a>
     <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
+<!-- Hero Section -->
 <section id="hero">
   <div class="hero-container">
     <h1 class="hero-title">Websites That Grow Your Business</h1>
@@ -33,49 +40,97 @@
   </div>
 </section>
 
+<!-- Services Section -->
 <section class="section" id="services">
   <h2>Our Services</h2>
   <div class="grid">
-    <div class="card">
+    <div class="card reveal">
       <h3>Business Websites</h3>
       <p>Modern websites designed for small and growing businesses.</p>
     </div>
-    <div class="card">
+    <div class="card reveal">
       <h3>Landing Pages</h3>
       <p>High-conversion landing pages for ads and marketing campaigns.</p>
     </div>
-    <div class="card">
+    <div class="card reveal">
       <h3>Website Redesign</h3>
       <p>Transform outdated websites into modern professional platforms.</p>
     </div>
   </div>
 </section>
 
+<!-- Portfolio Section -->
 <section class="section" id="portfolio">
   <h2>Portfolio</h2>
   <div class="grid">
-    <div class="card">
+    <div class="card reveal">
+      <img src="https://via.placeholder.com/300x200" alt="Restaurant Website">
       <h3>Restaurant Website</h3>
       <p>Elegant website for restaurants with menu and contact features.</p>
     </div>
-    <div class="card">
+    <div class="card reveal">
+      <img src="https://via.placeholder.com/300x200" alt="Gym Website">
       <h3>Gym Website</h3>
       <p>High-energy website for fitness brands and gyms.</p>
     </div>
-    <div class="card">
+    <div class="card reveal">
+      <img src="https://via.placeholder.com/300x200" alt="Coaching Website">
       <h3>Coaching Website</h3>
       <p>Professional site for coaching institutes and educators.</p>
     </div>
   </div>
 </section>
 
+<!-- Pricing Section -->
+<section class="section" id="pricing">
+  <h2>Pricing</h2>
+  <div class="grid">
+    <div class="card reveal">
+      <h3>Starter / Demo Site</h3>
+      <p>3–4 pages, hero, services, portfolio placeholders, contact form</p>
+      <p><strong>Price: ₹3,000 – ₹5,000</strong></p>
+    </div>
+    <div class="card reveal">
+      <h3>Small Business Site</h3>
+      <p>4–5 pages, custom content, basic animations, responsive</p>
+      <p><strong>Price: ₹5,000 – ₹10,000</strong></p>
+    </div>
+    <div class="card reveal">
+      <h3>Professional / Medium Business</h3>
+      <p>5–6 pages, scroll reveal animations, polished portfolio</p>
+      <p><strong>Price: ₹15,000 – ₹25,000</strong></p>
+    </div>
+    <div class="card reveal">
+      <h3>Premium / Agency-Level</h3>
+      <p>6+ pages, multiple animations, real portfolio, client branding, SEO basics</p>
+      <p><strong>Price: ₹50,000+</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section" id="testimonials">
+  <h2>What Clients Say</h2>
+  <div class="grid">
+    <div class="card reveal">
+      <p>"NextGen Web Studios completely transformed our website! Leads doubled in 1 month."</p>
+      <h4>- Ramesh, Restaurant Owner</h4>
+    </div>
+    <div class="card reveal">
+      <p>"Professional, fast, and exactly what we needed. Highly recommend!"</p>
+      <h4>- Priya, Gym Owner</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
 <section class="section" id="contact">
   <h2>Contact Us</h2>
   <form action="https://formspree.io/f/mbdzjzlw" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit" class="button">Send Message</button>
+    <button type="submit" class="hero-btn">Send Message</button>
   </form>
 </section>
 
@@ -83,19 +138,6 @@
   <p>© 2026 NextGen Web Studios</p>
 </footer>
 
-<script>
-  // Scroll Reveal for all sections
-  const revealElements = document.querySelectorAll('.section, .hero-container');
-  window.addEventListener('scroll', () => {
-    const triggerBottom = window.innerHeight * 0.85;
-    revealElements.forEach(el => {
-      const top = el.getBoundingClientRect().top;
-      if(top < triggerBottom) {
-        el.classList.add('active');
-      }
-    });
-  });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
