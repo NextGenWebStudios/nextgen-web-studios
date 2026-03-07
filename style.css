@@ -47,9 +47,11 @@ nav a:hover {
 #hero {
   height: 90vh;
   display: flex;
+  flex-direction: column;   /* ADD this */
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: visible;        /* CHANGE this from hidden */
 }
 
 .hero-container {
