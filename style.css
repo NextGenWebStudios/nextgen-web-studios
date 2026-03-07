@@ -142,4 +142,11 @@ footer {
   border-radius: 5px;
   background: #1a1a1a;
   color: white;
+  box-sizing: border-box; /* ensures padding doesn't break width */
+}
+
+/* Make textarea same height as inputs (or slightly taller) */
+#contact textarea {
+  min-height: 100px;  /* adjust as needed */
+  resize: vertical;   /* allow vertical resize only */
 }
