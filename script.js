@@ -1,14 +1,16 @@
-// Scroll reveal effect
-const reveals = document.querySelectorAll('.reveal');
-function revealElements() {
-  for (let i=0;i<reveals.length;i++){
-    const windowHeight = window.innerHeight;
-    const elementTop = reveals[i].getBoundingClientRect().top;
-    const revealPoint = 150;
-    if(elementTop < windowHeight - revealPoint){
-      reveals[i].classList.add('active');
-    }
+// Sticky header background
+window.addEventListener('scroll', function() {
+  const header = document.getElementById('header');
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
   }
-}
-window.addEventListener('scroll', revealElements);
-window.addEventListener('load', revealElements);
+
+  // Scroll reveal
+  document.querySelectorAll('.reveal').forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if(top < windowHeight - 100) el.classList.add('active');
+  });
+});
