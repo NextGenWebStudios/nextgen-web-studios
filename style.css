@@ -132,21 +132,33 @@ footer {
   transform: translateY(0);
 }
 
-/* Contact Form Inputs */
+/* Contact Form Inputs - Premium Look */
 #contact input,
 #contact textarea {
-  padding: 10px;
+  padding: 12px;
   width: 90%;
   margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background: #1a1a1a;
+  border: 1px solid #444;       /* slightly lighter border */
+  border-radius: 8px;
+  background: #222;             /* lighter and premium look */
   color: white;
-  box-sizing: border-box; /* ensures padding doesn't break width */
+  box-sizing: border-box;
 }
 
-/* Make textarea same height as inputs (or slightly taller) */
 #contact textarea {
-  min-height: 100px;  /* adjust as needed */
-  resize: vertical;   /* allow vertical resize only */
+  min-height: 120px;           /* slightly taller for better look */
+  resize: vertical;
+}
+
+/* Form container - centered and premium */
+#contact form {
+  background: #1c1c1c;          /* subtle card-style background */
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;               /* center form */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
