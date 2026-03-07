@@ -10,22 +10,21 @@
 
 <body>
 
+<!-- Header -->
 <header>
   <div class="logo">NextGen Web Studios</div>
   <nav>
     <a href="#hero">Home</a>
-    <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#pricing">Pricing</a>
-    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <!-- Hero Section -->
 <section id="hero">
-  <div class="hero-container reveal">
+  <div class="hero-container">
     <h1 class="hero-title">Websites That Grow Your Business</h1>
     <p class="hero-subtitle">
       NextGen Web Studios creates modern, high-performance websites
@@ -37,35 +36,21 @@
   </div>
 </section>
 
-<!-- About Section -->
-<section class="section" id="about">
-  <h2 class="reveal">About Us</h2>
-  <p class="reveal">
-    At NextGen Web Studios, we specialize in creating modern, responsive, and high-performance websites
-    that help businesses thrive online. With years of experience in web design, development, and digital marketing,
-    we combine creativity and technology to deliver websites that not only look stunning but also convert visitors into customers.
-  </p>
-  <p class="reveal">
-    Our mission is simple: empower businesses to succeed online. From startups to established brands, 
-    we provide end-to-end web solutions tailored to your unique needs.
-  </p>
-</section>
-
 <!-- Services Section -->
 <section class="section" id="services">
   <h2 class="reveal">Our Services</h2>
-  <div class="grid">
-    <div class="card reveal">
+  <div class="grid reveal">
+    <div class="card">
       <h3>Business Websites</h3>
-      <p>Modern websites for small and growing businesses, fully responsive and professional.</p>
+      <p>Modern websites designed for small and growing businesses.</p>
     </div>
-    <div class="card reveal">
+    <div class="card">
       <h3>Landing Pages</h3>
       <p>High-conversion landing pages for ads and marketing campaigns.</p>
     </div>
-    <div class="card reveal">
+    <div class="card">
       <h3>Website Redesign</h3>
-      <p>Transform outdated websites into modern, fast, and professional platforms.</p>
+      <p>Transform outdated websites into modern professional platforms.</p>
     </div>
   </div>
 </section>
@@ -73,80 +58,95 @@
 <!-- Portfolio Section -->
 <section class="section" id="portfolio">
   <h2 class="reveal">Portfolio</h2>
-  <div class="grid">
-    <div class="card reveal">
+  <div class="grid reveal">
+    <div class="card">
       <h3>Restaurant Website</h3>
-      <p>Elegant, mobile-friendly website for restaurants with menu and contact features.</p>
+      <p>Elegant website for restaurants with menu and contact features.</p>
     </div>
-    <div class="card reveal">
+    <div class="card">
       <h3>Gym Website</h3>
-      <p>High-energy website for fitness brands and gyms with modern design.</p>
+      <p>High-energy website for fitness brands and gyms.</p>
     </div>
-    <div class="card reveal">
+    <div class="card">
       <h3>Coaching Website</h3>
-      <p>Professional website for coaching institutes and educators.</p>
+      <p>Professional site for coaching institutes and educators.</p>
     </div>
   </div>
 </section>
 
 <!-- Pricing Section -->
 <section class="section" id="pricing">
-  <h2 class="reveal">Pricing</h2>
-  <div class="grid">
-    <div class="card reveal">
-      <h3>Basic</h3>
-      <p>₹5,000–10,000</p>
+  <h2 class="reveal">Pricing Plans</h2>
+  <p class="reveal">Choose a plan that fits your business needs. All websites are responsive, modern, and high-performance.</p>
+  <div class="grid reveal">
+
+    <!-- Basic Plan -->
+    <div class="card">
+      <h3>Basic Website</h3>
+      <p>₹5,000 – ₹10,000</p>
       <ul>
         <li>3–4 Pages</li>
         <li>Responsive Design</li>
-        <li>Contact Form</li>
+        <li>Basic SEO</li>
+        <li>Contact Form Integration</li>
       </ul>
-      <button class="button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get Quote</button>
+      <button class="button" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Quote</button>
     </div>
-    <div class="card reveal most-popular">
-      <h3>Standard</h3>
-      <p>₹20,000–35,000</p>
+
+    <!-- Standard Plan (Best Value) -->
+    <div class="card highlight">
+      <h3>Standard Website <span>(Best Value)</span></h3>
+      <p>₹20,000 – ₹35,000</p>
       <ul>
         <li>5–6 Pages</li>
-        <li>Animations & Portfolio</li>
-        <li>SEO Optimized</li>
-        <li>Responsive & Fast</li>
+        <li>Responsive & Modern Design</li>
+        <li>SEO Optimization</li>
+        <li>Portfolio / Blog Integration</li>
+        <li>2 Months Support</li>
       </ul>
-      <button class="button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get Quote</button>
+      <button class="button" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Quote</button>
     </div>
-    <div class="card reveal">
-      <h3>Premium</h3>
+
+    <!-- Premium Plan -->
+    <div class="card">
+      <h3>Premium Website</h3>
       <p>₹50,000+</p>
       <ul>
-        <li>Multiple Pages</li>
-        <li>Custom Animations</li>
-        <li>Full Branding & SEO</li>
-        <li>High Performance</li>
+        <li>6+ Pages</li>
+        <li>Advanced Animations & Interactions</li>
+        <li>SEO & Performance Optimization</li>
+        <li>Portfolio / Blog Integration</li>
+        <li>1 Month Premium Support</li>
       </ul>
-      <button class="button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get Quote</button>
+      <button class="button" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Quote</button>
     </div>
+
   </div>
 </section>
 
-<!-- Testimonials Section -->
+<!-- Testimonials / Social Proof -->
 <section class="section" id="testimonials">
   <h2 class="reveal">What Our Clients Say</h2>
-  <div class="grid">
-    <div class="card reveal">
-      <p>"NextGen Web Studios transformed our website! We got more leads in 2 weeks!"</p>
-      <h4>- Restaurant Owner</h4>
+  <div class="grid reveal">
+    <div class="card">
+      <p>"NextGen Web Studios completely transformed our website. Leads doubled!"</p>
+      <strong>- Restaurant Owner</strong>
     </div>
-    <div class="card reveal">
-      <p>"Professional, fast, and responsive. Highly recommend for any business."</p>
-      <h4>- Gym Owner</h4>
+    <div class="card">
+      <p>"Professional, fast, and creative. Highly recommended."</p>
+      <strong>- Gym Owner</strong>
+    </div>
+    <div class="card">
+      <p>"Our coaching institute now looks professional online. Very satisfied!"</p>
+      <strong>- Coaching Center</strong>
     </div>
   </div>
 </section>
 
 <!-- Contact Section -->
 <section class="section" id="contact">
-  <h2 class="reveal">Contact Us</h2>
-  <form action="https://formspree.io/f/mbdzjzlw" method="POST" class="reveal">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/mbdzjzlw" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" required></textarea>
@@ -154,22 +154,24 @@
   </form>
 </section>
 
+<!-- Footer -->
 <footer>
   <p>© 2026 NextGen Web Studios</p>
 </footer>
 
 <script>
-// Scroll Reveal Animation
-const revealElements = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('active');
+  // Scroll reveal on load
+  const reveals = document.querySelectorAll('.reveal');
+  window.addEventListener('scroll', () => {
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const revealTop = reveals[i].getBoundingClientRect().top;
+      const revealPoint = 150;
+      if (revealTop < windowHeight - revealPoint) {
+        reveals[i].classList.add('active');
+      }
     }
   });
-},{threshold:0.2});
-
-revealElements.forEach(el => observer.observe(el));
 </script>
 
 </body>
