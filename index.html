@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NextGen Web Studios</title>
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-<header id="header">
+<!-- HEADER -->
+<header>
   <div class="logo">NextGen Web Studios</div>
   <nav>
     <a href="#hero">Home</a>
+    <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#pricing">Pricing</a>
-    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<!-- Hero Section -->
+<!-- HERO -->
 <section id="hero">
-  <div class="hero-container">
+  <div class="hero-container reveal">
     <h1 class="hero-title">Websites That Grow Your Business</h1>
     <p class="hero-subtitle">
       NextGen Web Studios creates modern, high-performance websites
@@ -40,93 +35,121 @@
   </div>
 </section>
 
-<!-- Services Section -->
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <p>NextGen Web Studios is a team of creative designers and developers committed to helping businesses succeed online. We focus on modern, responsive, and high-performance websites that drive growth.</p>
+  <div class="team-grid reveal">
+    <div class="card">
+      <h3>John Doe</h3>
+      <p>Lead Designer</p>
+    </div>
+    <div class="card">
+      <h3>Jane Smith</h3>
+      <p>Lead Developer</p>
+    </div>
+    <div class="card">
+      <h3>Alex Brown</h3>
+      <p>Marketing Strategist</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
 <section class="section" id="services">
   <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card reveal">
+  <div class="grid reveal">
+    <div class="card">
       <h3>Business Websites</h3>
-      <p>Modern websites designed for small and growing businesses.</p>
+      <p>Modern websites for small and growing businesses.</p>
     </div>
-    <div class="card reveal">
+    <div class="card">
       <h3>Landing Pages</h3>
-      <p>High-conversion landing pages for ads and marketing campaigns.</p>
+      <p>High-conversion landing pages for campaigns.</p>
     </div>
-    <div class="card reveal">
+    <div class="card">
       <h3>Website Redesign</h3>
-      <p>Transform outdated websites into modern professional platforms.</p>
+      <p>Transform outdated websites into modern platforms.</p>
+    </div>
+    <div class="card">
+      <h3>E-commerce</h3>
+      <p>Online stores designed for sales and scalability.</p>
     </div>
   </div>
 </section>
 
-<!-- Portfolio Section -->
+<!-- PORTFOLIO -->
 <section class="section" id="portfolio">
   <h2>Portfolio</h2>
-  <div class="grid">
-    <div class="card reveal">
-      <img src="https://via.placeholder.com/300x200" alt="Restaurant Website">
-      <h3>Restaurant Website</h3>
-      <p>Elegant website for restaurants with menu and contact features.</p>
+  <div class="grid reveal">
+    <div class="card portfolio-card">
+      <img src="https://via.placeholder.com/400x250" alt="Restaurant Website">
+      <div class="overlay">
+        <h3>Restaurant Website</h3>
+        <p>Menu, booking & contact features.</p>
+      </div>
     </div>
-    <div class="card reveal">
-      <img src="https://via.placeholder.com/300x200" alt="Gym Website">
-      <h3>Gym Website</h3>
-      <p>High-energy website for fitness brands and gyms.</p>
+    <div class="card portfolio-card">
+      <img src="https://via.placeholder.com/400x250" alt="Gym Website">
+      <div class="overlay">
+        <h3>Gym Website</h3>
+        <p>High-energy design for fitness brands.</p>
+      </div>
     </div>
-    <div class="card reveal">
-      <img src="https://via.placeholder.com/300x200" alt="Coaching Website">
-      <h3>Coaching Website</h3>
-      <p>Professional site for coaching institutes and educators.</p>
+    <div class="card portfolio-card">
+      <img src="https://via.placeholder.com/400x250" alt="Coaching Website">
+      <div class="overlay">
+        <h3>Coaching Website</h3>
+        <p>Professional platform for educators.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Pricing Section -->
+<!-- PRICING -->
 <section class="section" id="pricing">
-  <h2>Pricing</h2>
-  <div class="grid">
-    <div class="card reveal">
-      <h3>Starter / Demo Site</h3>
-      <p>3–4 pages, hero, services, portfolio placeholders, contact form</p>
-      <p><strong>Price: ₹3,000 – ₹5,000</strong></p>
+  <h2>Pricing Packages</h2>
+  <div class="grid reveal">
+    <div class="card pricing-card">
+      <h3>Basic</h3>
+      <p>₹5,000 – ₹10,000</p>
+      <ul>
+        <li>3–4 Pages</li>
+        <li>Responsive Design</li>
+        <li>Contact Form</li>
+        <li>1 Revision</li>
+      </ul>
+      <button class="hero-btn">Get Started</button>
     </div>
-    <div class="card reveal">
-      <h3>Small Business Site</h3>
-      <p>4–5 pages, custom content, basic animations, responsive</p>
-      <p><strong>Price: ₹5,000 – ₹10,000</strong></p>
+    <div class="card pricing-card popular">
+      <h3>Medium</h3>
+      <p>₹20,000 – ₹35,000</p>
+      <ul>
+        <li>5–6 Pages</li>
+        <li>Portfolio / Blog</li>
+        <li>Animations & Effects</li>
+        <li>3 Revisions</li>
+      </ul>
+      <button class="hero-btn">Get Quote</button>
     </div>
-    <div class="card reveal">
-      <h3>Professional / Medium Business</h3>
-      <p>5–6 pages, scroll reveal animations, polished portfolio</p>
-      <p><strong>Price: ₹15,000 – ₹25,000</strong></p>
-    </div>
-    <div class="card reveal">
-      <h3>Premium / Agency-Level</h3>
-      <p>6+ pages, multiple animations, real portfolio, client branding, SEO basics</p>
-      <p><strong>Price: ₹50,000+</strong></p>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials Section -->
-<section class="section" id="testimonials">
-  <h2>What Clients Say</h2>
-  <div class="grid">
-    <div class="card reveal">
-      <p>"NextGen Web Studios completely transformed our website! Leads doubled in 1 month."</p>
-      <h4>- Ramesh, Restaurant Owner</h4>
-    </div>
-    <div class="card reveal">
-      <p>"Professional, fast, and exactly what we needed. Highly recommend!"</p>
-      <h4>- Priya, Gym Owner</h4>
+    <div class="card pricing-card">
+      <h3>Premium</h3>
+      <p>₹50,000+</p>
+      <ul>
+        <li>7+ Pages</li>
+        <li>Full Agency Design</li>
+        <li>Custom Animations & SEO</li>
+        <li>Unlimited Revisions</li>
+      </ul>
+      <button class="hero-btn">Contact Us</button>
     </div>
   </div>
 </section>
 
-<!-- Contact Section -->
+<!-- CONTACT -->
 <section class="section" id="contact">
   <h2>Contact Us</h2>
-  <form action="https://formspree.io/f/mbdzjzlw" method="POST">
+  <form action="https://formspree.io/f/mbdzjzlw" method="POST" class="reveal">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" required></textarea>
@@ -134,10 +157,21 @@
   </form>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2026 NextGen Web Studios</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+// Scroll Reveal
+const reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', () => {
+  for (let el of reveals) {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 50) el.classList.add('active');
+  }
+});
+</script>
+
 </body>
 </html>
