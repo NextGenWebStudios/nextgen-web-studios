@@ -1,139 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NextGen Web Studios</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGen Web Studios</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-  <div class="logo">NextGen Web Studios</div>
+  <!-- Navigation -->
   <nav>
-    <a href="#hero">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
+    <div class="logo">NextGen Web Studios</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
-</header>
 
-<section id="hero">
-  <div class="hero-container">
-    <h1 class="hero-title">Websites That Grow Your Business</h1>
-    <p class="hero-subtitle">NextGen Web Studios creates modern, high-performance websites that help businesses look professional and attract more customers.</p>
-    <button class="hero-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Your Project</button>
-  </div>
-</section>
-
-<section class="section" id="about">
-  <h2>About Us</h2>
-  <p>NextGen Web Studios is a premium web design agency dedicated to building modern, responsive, and high-converting websites. We specialize in creating custom solutions for businesses, ensuring your online presence drives results and growth.</p>
-  <div class="grid">
-    <div class="card reveal"><h3>Expert Designers</h3><p>Visually stunning websites that match your brand.</p></div>
-    <div class="card reveal"><h3>Fast & Responsive</h3><p>Optimized for speed, mobile, and UX.</p></div>
-    <div class="card reveal"><h3>Conversion Focused</h3><p>Built to attract and convert visitors into customers.</p></div>
-  </div>
-</section>
-
-<section class="section" id="services">
-  <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card reveal"><h3>Business Websites</h3><p>Modern websites for small and growing businesses.</p></div>
-    <div class="card reveal"><h3>Landing Pages</h3><p>High-conversion landing pages for ads and campaigns.</p></div>
-    <div class="card reveal"><h3>Website Redesign</h3><p>Transform outdated websites into modern platforms.</p></div>
-  </div>
-</section>
-
-<section class="section" id="portfolio">
-  <h2>Portfolio</h2>
-  <div class="grid">
-    <div class="card reveal"><h3>Restaurant Website</h3><p>Elegant website with menu & contact features.</p></div>
-    <div class="card reveal"><h3>Gym Website</h3><p>High-energy website for gyms & fitness brands.</p></div>
-    <div class="card reveal"><h3>Coaching Website</h3><p>Professional site for coaching institutes & educators.</p></div>
-  </div>
-</section>
-
-<section class="section" id="pricing">
-  <h2>Pricing Plans</h2>
-  <p class="pricing-subtitle">Choose the plan that suits your business needs. Transparent & professional pricing.</p>
-
-  <div class="grid pricing-grid">
-    <div class="card pricing-card reveal">
-      <div class="plan-header"><h3>Basic</h3><p class="price">₹5,000 – ₹10,000</p></div>
-      <ul class="features">
-        <li>3–4 Pages Website</li>
-        <li>Responsive Design</li>
-        <li>Contact Form Integration</li>
-        <li>Basic SEO Setup</li>
-      </ul>
-      <button class="pricing-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Quote</button>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1 class="animate">Premium Websites for Your Business</h1>
+      <p class="animate">Launch your online presence in days, not months!</p>
+      <a href="#contact" class="btn-cta animate">Start Your Project</a>
     </div>
+  </section>
 
-    <div class="card pricing-card best-value reveal">
-      <div class="plan-header"><h3>Medium</h3><p class="price">₹20,000 – ₹35,000</p><span class="badge">Best Value</span></div>
-      <ul class="features">
-        <li>5–6 Pages Website</li>
-        <li>Responsive & SEO Optimized</li>
-        <li>Contact Form + Animations</li>
-        <li>Portfolio / Gallery</li>
-        <li>Blog / CMS Integration</li>
-      </ul>
-      <button class="pricing-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Quote</button>
+  <!-- Services Section -->
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Business Websites</h3>
+        <p>Responsive, modern websites tailored to your business.</p>
+      </div>
+      <div class="service-card">
+        <h3>E-commerce</h3>
+        <p>Sell online with sleek, secure, and fast e-commerce websites.</p>
+      </div>
+      <div class="service-card">
+        <h3>Portfolio</h3>
+        <p>Showcase your work professionally with interactive portfolio pages.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="card pricing-card reveal">
-      <div class="plan-header"><h3>Premium</h3><p class="price">₹50,000+</p></div>
-      <ul class="features">
-        <li>7+ Pages / Full Agency Website</li>
-        <li>Advanced Animations & Interactions</li>
-        <li>Portfolio & Custom CMS</li>
-        <li>SEO & Performance Optimization</li>
-        <li>Social Media Integration</li>
-        <li>Full Support & Maintenance</li>
-      </ul>
-      <button class="pricing-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Quote</button>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2 class="section-title">Our Portfolio</h2>
+    <div class="portfolio-container">
+      <div class="portfolio-card">
+        <img src="https://via.placeholder.com/300x200" alt="Restaurant Website">
+        <h3>Restaurant Website</h3>
+      </div>
+      <div class="portfolio-card">
+        <img src="https://via.placeholder.com/300x200" alt="Gym Website">
+        <h3>Gym Website</h3>
+      </div>
+      <div class="portfolio-card">
+        <img src="https://via.placeholder.com/300x200" alt="Coaching Website">
+        <h3>Coaching Website</h3>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="testimonials">
-    <h3>What Our Clients Say</h3>
-    <div class="testimonial-grid">
-      <div class="testimonial-card"><p>"NextGen Web Studios transformed our restaurant website. We doubled our reservations!"</p><span>- Priya, Restaurant Owner</span></div>
-      <div class="testimonial-card"><p>"Professional, fast, and creative. Our coaching institute website looks amazing!"</p><span>- Rajesh, Educator</span></div>
-      <div class="testimonial-card"><p>"Highly recommend! Our gym website now converts visitors into members efficiently."</p><span>- Karan, Gym Owner</span></div>
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <h2 class="section-title">Our Packages</h2>
+    <div class="pricing-container">
+
+      <!-- Basic Package -->
+      <div class="pricing-card">
+        <div class="badge">Limited Offer</div>
+        <h3>Basic</h3>
+        <p class="price">
+          <span class="original-price">₹5,000</span>
+          <span class="discounted-price">₹3,000</span>
+        </p>
+        <ul>
+          <li>3 Pages Website</li>
+          <li>Responsive Design</li>
+          <li>Contact Form Integration</li>
+        </ul>
+        <a href="#contact" class="btn-cta">Grab This Offer</a>
+      </div>
+
+      <!-- Standard Package -->
+      <div class="pricing-card best-value">
+        <div class="badge">Best Value</div>
+        <h3>Standard</h3>
+        <p class="price">
+          <span class="original-price">₹15,000</span>
+          <span class="discounted-price">₹10,000</span>
+        </p>
+        <ul>
+          <li>5 Pages Website</li>
+          <li>Responsive + Animations</li>
+          <li>SEO Basics</li>
+          <li>Contact Form + Portfolio</li>
+        </ul>
+        <a href="#contact" class="btn-cta">Grab This Offer</a>
+      </div>
+
+      <!-- Premium Package -->
+      <div class="pricing-card">
+        <div class="badge">Limited Offer</div>
+        <h3>Premium</h3>
+        <p class="price">
+          <span class="original-price">₹50,000</span>
+          <span class="discounted-price">₹35,000</span>
+        </p>
+        <ul>
+          <li>8–10 Pages Website</li>
+          <li>Premium Animations & Micro-Interactions</li>
+          <li>Full Portfolio Setup</li>
+          <li>SEO + Social Proof Integration</li>
+        </ul>
+        <a href="#contact" class="btn-cta">Grab This Offer</a>
+      </div>
+
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section" id="contact">
-  <h2>Contact Us</h2>
-  <form action="https://formspree.io/f/mbdzjzlw" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit" class="button">Send Message</button>
-  </form>
-</section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-cta">Send Message</button>
+    </form>
+  </section>
 
-<footer>
-  <p>© 2026 NextGen Web Studios</p>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 NextGen Web Studios. All Rights Reserved.</p>
+  </footer>
 
-<script>
-const reveals = document.querySelectorAll('.reveal');
-window.addEventListener('scroll', () => {
-  const windowHeight = window.innerHeight;
-  reveals.forEach(el => {
-    const revealTop = el.getBoundingClientRect().top;
-    if(revealTop < windowHeight - 50) el.classList.add('active');
-  });
-});
-</script>
+  <!-- Smooth Scroll JS -->
+  <script>
+    const links = document.querySelectorAll('nav ul li a');
+    for (const link of links) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+      });
+    }
+  </script>
 
 </body>
 </html>
